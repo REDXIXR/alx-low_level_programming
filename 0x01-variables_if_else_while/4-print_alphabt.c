@@ -1,23 +1,23 @@
 #include <stdio.h>
+
 /**
-*
-*
-*/
+  * main - Prints some letters of alphabet
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-char lower_case;
-char upper_case;
+	char c;
 
-for(upper_case = 'A'; upper_case <= "Z"; upper_case++)	
-{
-putchar(upper_case);
-}
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
+	}
 
-for(lower_case = 'a'; lower_case <= 'z'; lower_case++)
-{
-putchar(lower_case);
-}
-putchar('\n');
+	putchar('\n');
 
-return(0);
+	return (0);
 }
